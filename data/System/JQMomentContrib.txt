@@ -1,0 +1,74 @@
+%META:TOPICINFO{author="ProjectContributor" comment="reprev" date="1339591469" format="1.1" reprev="2" version="2"}%
+---+!! %TOPIC%
+%SHORTDESCRIPTION%
+
+%TOC%
+
+This package integrates the [[http://momentjs.com/][moment.js]] library into Foswiki.
+
+The full API documentation is available at http://momentjs.com/docs/
+
+---++ Example
+
+<form id="momentForm">
+<div class="foswikiFormSteps">
+  <div class="foswikiFormStep">
+    <h3>Enter a date string:</h3>
+    <input type="text" id="inputDate" value="2012-06-13T09:43:01Z" size="60" class="foswikiInputField foswikiLeft" style="margin-right:1em" />
+    %BUTTON{"%MAKETEXT{"Submit"}%" icon="tick" type="submit"}%
+    %CLEAR%
+  </div>
+  <div class="foswikiFormStep">
+  </div>
+---
+  <div class="foswikiFormStep">
+    <h3>Result:</h3>
+    <ul id="outputDate"></ul>
+  </div>
+</div>
+</form>
+
+%JQREQUIRE{"moment"}%
+
+<literal>
+<script>
+jQuery(function($) {
+  function updateMoments() {
+    $("#outputDate").empty();
+    var inputDate = $("#inputDate").val() || ((new Date).getTime()),
+        m = moment(inputDate);
+    $("#outputDate")
+      .append('<li> iso: '+m.format()+'</li>')
+      .append('<li> international: '+m.format('LLL')+'</li>')
+      .append('<li> calendar: '+m.calendar()+'</li>')
+      .append('<li> custom: '+m.format("dddd, Do MMMM YYYY, HH:mm")+'</li>')
+      .append('<li> humanized: '+m.fromNow()+'</li>');
+  }
+  $("#momentForm").submit(function() {
+    updateMoments();    
+    return false;
+  });
+  updateMoments();
+});
+</script>
+</literal>
+
+---++ Installation Instructions
+
+%$INSTALL_INSTRUCTIONS%
+
+---++ Info
+<!--
+   * Set SHORTDESCRIPTION = %$SHORTDESCRIPTION%
+-->
+
+|  Author(s): | Michael Daum|
+|  Copyright: | &copy; 2011-2012 Tim Wood (moment.js) &copy; 2012 Michael Daum http://michaeldaumconsulting.com (foswiki stubs) |
+|  License: | [[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]] and MIT  |
+|  Release: | %$RELEASE% |
+|  Version: | %$VERSION% |
+|  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  14 Jun 2012: | initial release |
+|  Dependencies: | %$DEPENDENCIES% |
+|  Home page: | Foswiki:Extensions/%TOPIC% |
+|  Support: | Foswiki:Support/%TOPIC% |
