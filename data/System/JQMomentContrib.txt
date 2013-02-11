@@ -63,11 +63,12 @@ jQuery(function($) {
 -->
 
 |  Author(s): | Michael Daum|
-|  Copyright: | &copy; 2011-2012 Tim Wood (moment.js) &copy; 2012 Michael Daum http://michaeldaumconsulting.com (foswiki stubs) |
+|  Copyright: | &copy; 2011-2013 Tim Wood (moment.js) &copy; 2012-2013 Michael Daum http://michaeldaumconsulting.com (foswiki stubs) |
 |  License: | [[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]] and MIT  |
 |  Release: | %$RELEASE% |
 |  Version: | %$VERSION% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  20 Feb 2013: | updated to moment.js 2.0.0 |
 |  14 Jun 2012: | initial release |
 |  Dependencies: | %$DEPENDENCIES% |
 |  Home page: | Foswiki:Extensions/%TOPIC% |

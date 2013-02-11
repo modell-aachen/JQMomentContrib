@@ -1,8 +1,8 @@
 // moment.js language configuration
-// language : portuguese (pt)
-// author : Jefferson : https://github.com/jalex79
+// language : brazilian portuguese (pt-br)
+// author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
-moment.lang('pt', {
+moment.lang('pt-br', {
     months : "Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro".split("_"),
     monthsShort : "Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez".split("_"),
     weekdays : "Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado".split("_"),
@@ -42,9 +42,5 @@ moment.lang('pt', {
         y : "um ano",
         yy : "%d anos"
     },
-    ordinal : '%dº',
-    week : {
-        dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
-    }
+    ordinal : '%dº'
 });

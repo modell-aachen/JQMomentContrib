@@ -31,7 +31,7 @@ sub new {
     $class->SUPER::new(
       $session,
       name => 'Moment',
-      version => '1.6.3',
+      version => '2.0.0',
       author => 'Tim Wood',
       homepage => 'http://momentjs.com/',
       javascript => ['moment.js'],
@@ -85,7 +85,7 @@ HERE
 __END__
 Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 
-Copyright (C) 2012 Michael Daum http://michaeldaumconsulting.com
+Copyright (C) 2012-2013 Michael Daum http://michaeldaumconsulting.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
