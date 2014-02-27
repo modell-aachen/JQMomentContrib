@@ -72,7 +72,7 @@ sub init {
     if ( -f $langFile ) {
         Foswiki::Func::addToZone(
             'script', "MOMENT::LANG",
-            <<"HERE", 'MOMENT' );
+            <<"HERE", 'JQUERYPLUGIN::MOMENT' );
 <script type='text/javascript' src='$Foswiki::cfg{PubUrlPath}/$langPath'></script>
 HERE
     } else {
